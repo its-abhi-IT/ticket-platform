@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zvpt5XRFFVs=",
+  "dgSpecHash": "L/heiJT4+Lk=",
   "success": true,
-  "projectFilePath": "C:\\Source\\dotnetAPI\\files\\TicketApi.csproj",
+  "projectFilePath": "C:\\Source\\ticket-platform\\TicketAPI\\TicketApi.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

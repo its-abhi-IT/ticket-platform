@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Source\\dotnetAPI\\files\\TicketApi.csproj": {}
+    "C:\\Source\\ticket-platform\\TicketAPI\\TicketApi.csproj": {}
   },
   "projects": {
-    "C:\\Source\\dotnetAPI\\files\\TicketApi.csproj": {
+    "C:\\Source\\ticket-platform\\TicketAPI\\TicketApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Source\\dotnetAPI\\files\\TicketApi.csproj",
+        "projectUniqueName": "C:\\Source\\ticket-platform\\TicketAPI\\TicketApi.csproj",
         "projectName": "TicketApi",
-        "projectPath": "C:\\Source\\dotnetAPI\\files\\TicketApi.csproj",
+        "projectPath": "C:\\Source\\ticket-platform\\TicketAPI\\TicketApi.csproj",
         "packagesPath": "C:\\Users\\AbhiGupta\\.nuget\\packages\\",
-        "outputPath": "C:\\Source\\dotnetAPI\\files\\obj\\",
+        "outputPath": "C:\\Source\\ticket-platform\\TicketAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
