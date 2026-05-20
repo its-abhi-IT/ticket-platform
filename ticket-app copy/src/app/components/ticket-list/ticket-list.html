@@ -1,0 +1,58 @@
+<div class="ticket-container">
+
+  <div class="ticket-header">
+    <h2>Tickets</h2>
+    <!-- Retry button calls loadTickets() again -->
+    <button (click)="loadTickets()">Refresh</button>
+  </div>
+
+  <!-- LOADING STATE: shown while isLoading is true -->
+  <div *ngIf="isLoading" class="state-box">
+    <p>Loading tickets...</p>
+  </div>
+
+  <!-- ERROR STATE: shown when errorMessage has a value -->
+  <div *ngIf="!isLoading && errorMessage" class="state-box error">
+    <p>{{ errorMessage }}</p>
+    <button (click)="loadTickets()">Try again</button>
+  </div>
+
+  <!-- EMPTY STATE: shown when loaded successfully but no tickets -->
+  <div *ngIf="!isLoading && !errorMessage && tickets.length === 0" class="state-box">
+    <p>No tickets found.</p>
+  </div>
+
+  <!-- DATA STATE: shown when tickets exist -->
+  <table *ngIf="!isLoading && !errorMessage && tickets.length > 0">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Status</th>
+        <th>Priority</th>
+        <th>Created</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- *ngFor loops over tickets array, creates one <tr> per ticket -->
+      <tr *ngFor="let ticket of tickets">
+        <td>#{{ ticket.id }}</td>
+        <td>{{ ticket.title }}</td>
+        <td>
+          <!-- [class] binds CSS class dynamically based on ticket.status -->
+          <span class="badge" [class]="'badge-' + ticket.status">
+            {{ ticket.status }}
+          </span>
+        </td>
+        <td>
+          <span class="badge" [class]="'badge-' + ticket.priority">
+            {{ ticket.priority }}
+          </span>
+        </td>
+        <td>{{ ticket.createdAt | date:'mediumDate' }}</td>
+        <!--                      ↑ Angular pipe — formats the date nicely -->
+      </tr>
+    </tbody>
+  </table>
+
+</div>
