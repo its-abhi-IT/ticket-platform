@@ -2,7 +2,7 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/TicketAPI/obj
-/TicketAPI/bin
+/obj
+/bin
 
-/TicketAPI/.vs
+/.vs
